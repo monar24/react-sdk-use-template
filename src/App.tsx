@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
-import { SDK } from 'sdktest';
 
 const App: React.FC = () => {
-  useEffect(() => {
-    const sdk = new SDK({ apiKey: 'my-secret-api-key', environment: 'production' });
-
-    sdk.getConfig();        
-    sdk.greetUser("User#001"); 
-  }, []);
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello from React App</h1>
+        <h1>Testing App</h1>
+
+        <iframe
+          src="http://localhost:5173"
+          width="100%"
+          height="600px"
+          frameBorder="0"
+        />
+
       </header>
     </div>
   );
